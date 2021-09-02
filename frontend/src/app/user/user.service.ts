@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class UserService {
   
-  usersUrl: string = 'api/users';
+  usersUrl: string = 'https://springular-nawfel.herokuapp.com/api/users';
   
   constructor(private http: HttpClient) { }
 
@@ -33,6 +33,7 @@ export class UserService {
   addUser(user:User):Observable<User> {
     return this.http.post<User>(this.usersUrl, user, httpOptions);
   }
+
   //Update user
   updateUser(user: User): Observable<any> {
     const url = `${this.usersUrl}/${user.id}`;
