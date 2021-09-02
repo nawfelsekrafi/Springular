@@ -22,7 +22,7 @@ import com.example.demo.repository.UserRepository;
 @RestController
 @Transactional
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "localhost:4200", maxAge = 3600)
 public class UserController {
 		@Autowired 
 		UserRepository cr;
