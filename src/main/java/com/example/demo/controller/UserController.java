@@ -21,8 +21,8 @@ import com.example.demo.repository.UserRepository;
 
 @RestController
 @Transactional
+@CrossOrigin
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "localhost:4200", maxAge = 3600)
 public class UserController {
 		@Autowired 
 		UserRepository cr;
