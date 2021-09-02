@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class UserService {
   
-  usersUrl: string = 'api/users';
+  usersUrl: string = 'https://springular-nawfel.herokuapp.com/api/users';
   
   constructor(private http: HttpClient) { }
 
